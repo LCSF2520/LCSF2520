@@ -1,0 +1,185 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f9f9f9;
+}
+
+/* Style rules for Container */
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Style rules for Navigation */
+nav {
+  background-color: #F15B42;
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+nav a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+
+nav a:hover {
+  color: #F5E7DE;
+}
+
+/* Style rules for top header*/
+.top-header { 
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 10px;
+}
+
+
+
+
+/* Style rules for Common Styles */
+h1, h2, h3 {
+    color: #8B4513;
+    margin: 20px 0 10px;
+}
+
+h1 {
+    font-size: 28px;
+}
+
+p {
+    margin-bottom: 15px;
+}
+
+/* Style rules for Footer */
+.footer {
+    background: #8B4513;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 40px;
+}
+
+/* Style rules for Table Styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+caption {
+    font-size: 1.2em;
+    font-weight: bold;
+    padding: 10px;
+    color: #8B4513;
+    caption-side: top;
+    margin-bottom: 10px;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: left;
+}
+
+th {
+    background-color: #b06128;
+    color: white;
+    font-weight: bold;
+}
+
+/* Alternate row colors */
+tr:nth-child(even) {
+    background-color: #f8f8f8;
+}
+
+tr:nth-child(odd) {
+    background-color: white;
+}
+
+/* Style rules for Row hover effect */
+tr:hover {
+    background-color: #ef8169;
+    cursor: pointer;
+}
+
+/* Style rules for DESKTOP STYLES*/
+@media (min-width: 1025px) {
+    .desktop-view {
+        display: block;
+    }
+    
+    .training-container {
+        background: white;
+        padding: 30px;
+        border-radius: 15px;
+        margin: 20px 0;
+    }
+    
+    .first-section-taining {
+        text-align: center;
+        margin-bottom: 40px;
+    }
+    
+    .features {
+        display: flex;
+        justify-content: center;
+        gap: 40px;
+        margin: 30px 0;
+    }
+    
+    .feature {
+        background: #FFF8DC;
+        padding: 20px;
+        border-radius: 10px;
+        width: 200px;
+    }
+    .feature:hover {
+         transform: translateY(-5px);
+         color: white;
+         background-color: #eeaa7a;
+    }
+    
+    .time-table {
+        margin: 30px 0;
+    }
+    
+    .time-table th,td {
+        padding: 15px;
+    }
+
+    
+    .time-table tbody {
+        background: #ef8169;
+        position: sticky;
+        top: 0;
+    }
+    
+    .time-table caption {
+        font-size: 1.4em;
+        padding: 15px;
+        background: #f33b12;
+        color: white;
+        border-radius: 10px 10px 0 0;
+    }
+    
+    .notes {
+        background: #f8f8f8;
+        padding: 20px;
+        border-radius: 10px;
+        margin-top: 30px;
+    }
+}

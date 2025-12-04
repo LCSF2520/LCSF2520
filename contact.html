@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Waffle World</title>
+    <link rel="stylesheet" href="css/contact.css">
+</head>
+<body>
+    <!-- Navigation -->
+     <div class="top-header">
+    <div class="logo">
+      <a href="index.html"><img src="images/logo.jpg" alt="Waffle Maker Logo" width="140" height="140"></a>
+    </div>
+     <nav>
+      <a href="index.html">Home</a> &nbsp;&nbsp;
+      <a href="about.html">About</a> &nbsp;&nbsp;
+      <a href="team.html">Our Team</a> &nbsp;&nbsp;
+      <a href="specials.html">Specials</a> &nbsp;&nbsp;
+      <a href="training.html">Training</a> &nbsp;&nbsp;
+      <a href="media.html">Media</a> &nbsp;&nbsp;
+      <a href="faqs.html">FAQs</a> &nbsp;&nbsp;
+      <a href="contact.html">Contact Us</a>
+    </nav>
+   </div>
+
+    <!-- Main Content -->
+    <main class="container">
+       
+        <!-- Desktop View -->
+        <div class="desktop-view">
+            <div class="contact-layout">
+                <section class="contact-intro">
+                    <h1>Contact Waffle World</h1>
+                    <p>We're here to help with any questions about our waffle makers.</p>
+                    
+                    <div class="instruction-box">
+                        <h2>Contact Instructions:</h2>
+                        <ol>
+                            <li>Complete all required fields</li>
+                            <li>Use the dropdown to select your contact reason</li>
+                            <li>Check all waffle maker models you own</li>
+                            <li>Select your preferred contact time</li>
+                            <li>Add your purchase date if applicable</li>
+                            <li>Provide detailed message in the textarea</li>
+                            <li>Review and submit your request</li>
+                        </ol>
+                    </div>
+                </section>
+                
+                <form class="contact-form">
+                    <fieldset>
+                        <legend>Personal Information</legend>
+                        
+                        <div class="form-grid">
+                            <div class="form-group">
+                                <label for="firstname">First Name *</label>
+                                <input type="text" id="firstname" name="firstname" size="30" required autofocus>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="lastname">Last Name *</label>
+                                <input type="text" id="lastname" name="lastname" size="30" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="contactemail">Email *</label>
+                                <input type="email" id="contactemail" name="contactemail" placeholder="example@email.com" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="contactphone">Phone</label>
+                                <input type="tel" id="contactphone" name="contactphone" placeholder="(555) 555-5555">
+                            </div>
+                        </div>
+                    </fieldset>
+                    
+                    <fieldset>
+                        <legend>Inquiry Details</legend>
+                        
+                        <div class="form-group">
+                            <label for="inquiry">Inquiry Type *</label>
+                            <select id="inquiry" name="inquiry" required>
+                                <option value="">-- Please Select --</option>
+                                <option value="support">Technical Support</option>
+                                <option value="warranty">Warranty Claim</option>
+                                <option value="order">Order Status</option>
+                                <option value="product">Product Question</option>
+                                <option value="general">General Inquiry</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label>Products You Own:</label>
+                            <div class="checkbox-grid">
+                                <label><input type="checkbox" name="products[]" value="classic"> Classic Waffle Maker</label>
+                                <label><input type="checkbox" name="products[]" value="belgian"> Belgian Waffle Maker</label>
+                                <label><input type="checkbox" name="products[]" value="mini"> Mini Waffle Maker</label>
+                                <label><input type="checkbox" name="products[]" value="flip"> Flip Waffle Maker</label>
+                                <label><input type="checkbox" name="products[]" value="stovetop"> Stovetop Model</label>
+                                <label><input type="checkbox" name="products[]" value="none"> None Yet</label>
+                            </div>
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label>Purchase Date:</label>
+                                <input type="date" id="purchase" name="purchase">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label>Priority:</label>
+                                <div class="radio-inline">
+                                    <label><input type="radio" name="priority" value="low" checked> Low</label>
+                                    <label><input type="radio" name="priority" value="medium"> Medium</label>
+                                    <label><input type="radio" name="priority" value="high"> High</label>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="description">Describe Your Issue *</label>
+                            <textarea id="description" name="description" rows="5" placeholder="Please provide details about your question or issue..." required></textarea>
+                        </div>
+                    </fieldset>
+                    
+                    <div class="form-actions">
+                        <button type="submit" class="btn-submit">Submit Request</button>
+                        <button type="reset" class="btn-reset">Reset Form</button>
+                    </div>
+                </form>
+                
+                <aside class="contact-details">
+                    <h3>Other Ways to Reach Us</h3>
+                    <p><strong>Email:</strong> support@waffleworld.com</p>
+                    <p><strong>Phone:</strong> 1-800-WAFFLE-1</p>
+                    <p><strong>Address:</strong> 123 Breakfast Street, Waffle City, WC 12345</p>
+                    <p><strong>Response Time:</strong> 1-2 business days</p>
+                </aside>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            &copy; Copyright 2099. All Rights Reserved.
+            <p>We respond to all inquiries within 48 hours.</p>
+        </div>
+    </footer>
+</body>
+</html>
